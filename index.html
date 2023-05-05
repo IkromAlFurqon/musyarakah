@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    <title>IICYMS 2023 - Musyarakah</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="" class="logo">IICYMS</a>
+            <div class="space"></div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Home</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Murabahah</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Musyarakah</a>
+                <div class="underline"></div>
+            </div>
+            <div class="nav-item-container">
+                <a href="" class="nav-item">Mudharabah</a>
+                <div class="underline"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <div class="hero-section-container">
+            <h1>Shariah-compliant Financing Calculator</h1>
+            <h2>Musyarakah Calculator</h2>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>What is Musyarakah?</h1>
+            <p>Musyarakah (Joint Venture Profit and Loss Sharing) is a Shariah financing principle based on cooperation between two or more parties to run a specific business or project. Profits and losses are shared based on the percentage of ownership of each party. This partnership model is based on the principles of equity, risk-sharing, and mutual cooperation. In musyarakah, all partners have the right to participate in the management of the business, but can delegate this authority to a managing partner. Musyarakah can be used for various types of projects, including real estate development, trade finance, and manufacturing.</p>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>What is Musyarakah's Benefit?</h1>
+            <ol>
+                <li>The sharing of profits and losses according to a pre-agreed ratio.</li>
+                <li>The repayment of the financing principal is adjusted based on the customer's cash flow or business revenue, in order to avoid burdening the customer.</li>
+                <li>The profit-sharing principle in musyarakah differs from the fixed interest principle, where the bank charges the financing (customer) a fixed amount of interest regardless of the customer's profit, even in the event of losses and economic crises.</li>
+            </ol>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>Product of Murabahah</h1>
+            <ol>
+                <li>Microfinance: Microfinance refers to small and medium-sized business loans given to entrepreneurs or company owners who need money to establish or develop their enterprises. These loans are frequently arranged as microfinance loans, with smaller loan amounts and shorter repayment terms than standard business loans.</li>
+                <li>Investment financing</li>
+            </ol>
+            <br><hr>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="content-section">
+        <div class="content-section-container">
+            <h1>Simulation of Musyarakah Calculation Methods</h1>
+            <br><br>
+            <div class="calculator-container">
+                <div class="calculator-input-container">
+                    <h1>Input Forms</h1>
+                    <div class="input-container">
+                        <label for="ownCapital">Own capital</label>
+                        <input type="number" name="ownCapital" id="ownCapital">
+                    </div>
+                    <div class="input-container">
+                        <label for="borrowedCapital">Borrowed capital</label>
+                        <input type="number" name="borrowedCapital" id="borrowedCapital">
+                    </div>
+                    <div class="input-container">
+                        <label for="bankRatio">Profit sharing ratio (Ratio for Bank)</label>
+                        <input type="number" name="bankRatio" id="bankRatio">
+                    </div>
+                    <div class="input-container">
+                        <label for="profit">Profit (per Month)</label>
+                        <input type="number" name="profit" id="profit">
+                    </div>
+                    <div class="input-container">
+                        <label for="duration">Loan Duration</label>
+                        <input type="number" name="duration" id="duration">
+                    </div>
+                    <div class="input-container">
+                        <div id="input-button">Calculate!</div>
+                    </div>
+                </div>
+                <div class="calculator-output-container">
+                    <div class="general-output-container">
+                        <div class="general-output-column flex-center">
+                            <div class="general-output" style="display: flex; flex-direction: column;">
+                                <h1>The amount of installment (per month)</h1>
+                                <h2 id="monthlyInstallment-container"></h2>
+                            </div>
+                            <!-- <div class="general-output">
+                                <h1>The amount of installment per month</h1>
+                                <h2 id="monthlyInstallment-container"></h2>
+                            </div> -->
+                        </div>
+                        <div class="general-output-column">
+                            <div class="general-output">
+                                <h1>Profit earned per month</h1>
+                                <h2 id="selfProfit-container"></h2>
+                            </div>
+                            <div class="general-output">
+                                <h1>Profit earned by the bank per month</h1>
+                                <h2 id="bankProfit-container"></h2>
+                            </div>                            
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="table-container">
+                        <h1>Your Output's Table Details will Display Here</h1>
+                        <table id="musyarakah-table">
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <p class="note">Notes:</p>
+            <p class="note">This calculator is made to make it easier for you to calculate your loan. The calculation provided is an approximate estimation of the financing installments, based on a fixed margin rate in percentage (%). Please remind that the computation might change based on the lending institution, the loan amount, the repayment period, the allocation of proportions, and the method used. Remember that this is only an estimate, and the real installments may vary from the computation given. However, this calculation provides a useful tool for borrowers to get a general idea of the financing costs and make an informed decision when choosing a financing option.</p>
+            <p class="note"></p>
+            <br><hr>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
